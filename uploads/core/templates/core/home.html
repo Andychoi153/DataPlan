@@ -3,17 +3,18 @@
 {% block content %}
   <ul>
     <li>
-      <a href="{% url 'simple_upload' %}">Simple Upload</a>
+      <a href="{% url 'model_form_upload' %}">Model Form Upload</a>
     </li>
     <li>
-      <a href="{% url 'model_form_upload' %}">Model Form Upload</a>
+      <a href="http://andychoi.gonetis.com:8890/tree/andychoi/jupyter_notebook#">
+Data modulation</a>
     </li>
   </ul>
 
   <p>Uploaded files:</p>
   <ul>
     {% for obj in documents %}
-      <li>
+      <li>a
         <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
         <small>(Uploaded at: {{ obj.uploaded_at }})</small>
       </li>
