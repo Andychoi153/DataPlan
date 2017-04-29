@@ -36,7 +36,7 @@ def model_form_upload(request):
     })
 
 def lotter_main_page(request):
-    return render(request, 'core/lotter_main_page.html',)
+    return render(request, 'core/lotter_main_page.html')
 
 
 def lotter_extractor(request):
@@ -53,4 +53,6 @@ def lotter_extractor(request):
     return render(request, 'core/lotter_extractor.html',{
         'form':form
     })
-    
+
+def predict_stock(request):
+    return render(request,'core/predict_sotck.html')

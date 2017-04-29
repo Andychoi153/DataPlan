@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^uploads/form/$', views.model_form_upload, name='model_form_upload'),
     url(r'^uploads/form/$', views.lotter_main_page, name='lotter_main_page'),
     url(r'^uploads/form/$', views.lotter_extractor, name='lotter_extractor'),
+    url(r'^uploads/form/$', views.predict_stock, name='predict_stock'),
     url(r'^admin/', admin.site.urls),
 ]
 
