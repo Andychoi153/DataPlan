@@ -7,7 +7,8 @@
 </tr>
 </table>
   <ul>
-<img src="{{STATIC_URL}}images/lotter.png" >
+      {% load static %}
+<img src="{% static 'images/lotter.png' %}"  >
 </ul>
 <ul>
 <a href="{% url 'lotter_extractor' %}"><input type="button" value="번호 추출"></a>   
