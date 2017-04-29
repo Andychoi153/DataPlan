@@ -14,6 +14,10 @@ urlpatterns = [
     url(r'^uploads/lotter_extract/$', views.lotter_extractor, name='lotter_extractor'),
     url(r'^uploads/predict_stock/$', views.predict_stock, name='predict_stock'),
     url(r'^admin/', admin.site.urls),
+    patterns('',
+               (r'^media/(?P<path>.*)$', 'django.views.static.serve',
+                 {'document_root': settings.MEDIA_ROOT}),
+              ),
 ]
 
 if settings.DEBUG:
