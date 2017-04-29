@@ -34,3 +34,23 @@ def model_form_upload(request):
     return render(request, 'core/model_form_upload.html', {
         'form': form
     })
+
+def lotter_main_page(request):
+    return render(request, 'core/lotter_main_page.html',)
+
+
+def lotter_extractor(request):
+    import sys
+    sys.path.append('/upload/simple-file-upload')
+    
+    import lottery as lt
+    import numpy as np
+    datatxt = np.loadtxt('data.txt')
+    hello = lt.Lottery(datatxt)
+    hello.MLL(13)
+    hello.Test()
+    numbers = hello.returnLotterynum()[1]
+    return render(request, 'core/lotter_extractor.html',{
+        'form':form
+    })
+    

@@ -1,23 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<table border="1" align="center">
+<tr>
+ <td>AI Stores</td>
+</tr>
+</table>
   <ul>
-    <li>
-      <a href="{% url 'model_form_upload' %}">Model Form Upload</a>
-    </li>
-    <li>
-      <a href="http://andychoi.gonetis.com:8890/tree/andychoi/jupyter_notebook#">
-Data modulation</a>
-    </li>
-  </ul>
-
-  <p>Uploaded files:</p>
-  <ul>
-    {% for obj in documents %}
-      <li>a
-        <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
-        <small>(Uploaded at: {{ obj.uploaded_at }})</small>
-      </li>
-    {% endfor %}
+      <a href="{% url 'lotter_main_page' %}"><input type="button" value="Lotter Number 예측"></a>
+      <a href="{% url 'predict_stock' %}"><input type="button" value="주식 예측"></a> 
   </ul>
 {% endblock %}
