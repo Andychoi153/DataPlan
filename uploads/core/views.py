@@ -49,7 +49,7 @@ def lotter_extractor(request):
     hello = lt.Lottery(datatxt)
     hello.MLL(13)
     hello.Test()
-    numbers = hello.returnLotterynum()[1]
+    form = hello.returnLotterynum()[1]
     return render(request, 'core/lotter_extractor.html',{
         'form':form
     })
