@@ -45,7 +45,7 @@ def lotter_extractor(request):
     
     import lottery as lt
     import numpy as np
-    datatxt = np.loadtxt('data.txt')
+    datatxt = np.loadtxt('/upload/simple-file-upload/uploads/core/data.txt')
     hello = lt.Lottery(datatxt)
     hello.MLL(13)
     hello.Test()
