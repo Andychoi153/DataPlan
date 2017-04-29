@@ -1,7 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<table border="1" align="center">
+<head>
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css">
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+</head>
+<body> 
+<div data-role="page">
+  <div data-role="header">
+    <h1>AI store</h1>
+  </div>
+  <div data-role="content">
+<table align="center">
 <tr>
  <td>Lotter numbers</td>
 </tr>
@@ -10,4 +22,9 @@
     <a>{{ form }}</a>
         
   </ul>
+  </div>
+  <div data-role="footer">
+    <h4>푸터</h4>
+  </div>
+</div>  
 {% endblock %}
