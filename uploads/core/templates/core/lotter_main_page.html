@@ -17,11 +17,13 @@
 <img src="{{ MEDIA_URL }}images/lotter.png"  ></div> 
 </ul>
 <ul>
-<a href="{% url 'lotter_extractor' %}" class="button white">번호 추출</a>   
+<a href="{% url 'lotter_extractor' %}" class="ui-btn">번호 추출</a>   
 </ul>
 </div>
   <div data-role="footer">
+      <div align="center">
     <a href="{% url 'home' %}" data-role="button" data-icon="home">Home</a>
+          </div>
   </div>
 </div>      
 {% endblock %}

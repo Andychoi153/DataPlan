@@ -13,13 +13,14 @@
 </tr>
 </table>
   <ul>
-      <a href="{% url 'lotter_main_page' %}" class="button white">Lotter Number 예측</a>
-      <a href="{% url 'predict_stock' %}" class="button white">주식 예측</a> 
+      <a href="{% url 'lotter_main_page' %}" class="ui-btn">Lotter Number 예측</a>
+      <a href="{% url 'predict_stock' %}" class="ui-btn">주식 예측</a> 
   </ul>
  </div>
   <div data-role="footer">
+      <div align="center">
     <a href="{% url 'home' %}" data-role="button" data-icon="home">Home</a>
-
+</div>
   </div>
 </div>     
 {% endblock %}
