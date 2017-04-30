@@ -1,13 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<head>
 
-<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body> 
 <div data-role="page">
   <div data-role="header">
     <h1>AI store</h1>
@@ -19,15 +13,15 @@
 </tr>
 </table>
   <ul>
-      
-<img src="{{ MEDIA_URL }}images/lotter.png"  >
+<div align="center">     
+<img src="{{ MEDIA_URL }}images/lotter.png"  ></div> 
 </ul>
 <ul>
-<a href="{% url 'lotter_extractor' %}"><input type="button" value="번호 추출"></a>   
+<a href="{% url 'lotter_extractor' %}" class="button white">번호 추출</a>   
 </ul>
 </div>
   <div data-role="footer">
-    <h4>푸터</h4>
+    <a href="{% url 'home' %}" data-role="button" data-icon="home">Home</a>
   </div>
 </div>      
 {% endblock %}

@@ -1,13 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<head>
 
-<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body> 
 <div data-role="page">
   <div data-role="header">
     <h1>AI store</h1>
@@ -19,12 +13,13 @@
 </tr>
 </table>
   <ul>
-      <a href="{% url 'lotter_main_page' %}"><input type="button" value="Lotter Number 예측"></a>
-      <a href="{% url 'predict_stock' %}"><input type="button" value="주식 예측"></a> 
+      <a href="{% url 'lotter_main_page' %}" class="button white">Lotter Number 예측</a>
+      <a href="{% url 'predict_stock' %}" class="button white">주식 예측</a> 
   </ul>
  </div>
   <div data-role="footer">
-    <h4>푸터</h4>
+    <a href="{% url 'home' %}" data-role="button" data-icon="home">Home</a>
+
   </div>
 </div>     
 {% endblock %}
