@@ -14,7 +14,11 @@
 </table>
   <ul>
       <div align="center">
-    <a>{{ form }}</a>
+    <a>
+        {% for i in form %}
+        {{ i }}
+        {% endfor %}
+          </a>
            </div>
         
   </ul>
