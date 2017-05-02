@@ -47,7 +47,7 @@ def lotter_extractor(request):
     import numpy as np
     datatxt = np.loadtxt('/upload/simple-file-upload/uploads/core/data.txt')
     hello = lt.Lottery(datatxt)
-    hello.MLL(13)
+    hello.MLL(23)
     hello.Test()
     form = hello.returnLotterynum()[1]
     return render(request, 'core/lotter_extractor.html',{
@@ -56,3 +56,6 @@ def lotter_extractor(request):
 
 def predict_stock(request):
     return render(request,'core/predict_sotck.html')
+
+def model_desc(request):
+    return render(request, 'core/Lottery_test.html')
