@@ -61,4 +61,4 @@ def model_desc(request):
     return render(request, 'core/Model_desc.html')
 
 def lotter_desc(request):
-    return render(request, 'core/Lotter_test.html')
+    return render(request, 'core/Lottery_test.html')
