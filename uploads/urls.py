@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^uploads/lotter_extract/$', views.lotter_extractor, name='lotter_extractor'),
     url(r'^uploads/predict_stock/$', views.predict_stock, name='predict_stock'),
     url(r'^uploads/model_desc/$', views.model_desc, name='model_desc'),
+    url(r'^uploads/lotter_desc/$', views.lotter_desc, name='lotter_desc'),
     url(r'^admin/', admin.site.urls),
    
 ]

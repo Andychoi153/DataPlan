@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>AI store</h1>
+  </div>
+  <div data-role="content">
+
+
+      <div align="center">
+        <a href="{% url 'lotter_desc' %}" data-role="button">Lotter Number 예측 모델 설명</a>
+        
+  </div>
+  <div data-role="footer">
+      <div align="center">
+    <a href="{% url 'home' %}" data-role="button" data-icon="home">Home</a>
+          </div>
+  </div>
+</div>  
+{% endblock %}
