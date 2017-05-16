@@ -56,24 +56,8 @@ def lotter_extractor(request):
 
 def predict_stock(request):
     import numpy as np
-
-    stock = np.loadtxt('/upload/simple-file-upload/uploads/core/foo.txt')
-
-    stock0 = np.array([])
-    stock1 = np.array([])
-    stock2 = np.array([])
-    stock3 = np.array([])
-    stock4 = np.array([])
-    stock5 = np.array([])
-    stock6 = np.array([])
-    stock7 = np.array([])
-    stock8 = np.array([])
-
-
-    stocks = np.array([stock0,stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8])        
-    return render(request,'core/predict_sotck.html',{
-            'stocks':stocks
-    })
+      
+    return render(request,'core/predict_sotck.html')
 
 def model_desc(request):
     return render(request, 'core/Model_desc.html')
