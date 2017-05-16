@@ -19,10 +19,13 @@
 <td>5~9등급: 1~10일 내에 현재 대비 주가 지수가 내려갈 것으로 예상, 9등급에 가까울 수록 내림폭이 커질 것으로 예상</td>
 <br/>
 
+</tr>>
+
 	{% for stock in stocks %}
+	 <p> {{forloop.counter}} </p>
 	 <p> {{stock}} </p>
 	{% endfor %}
-</tr>
+
 </table>
 
 </div>
