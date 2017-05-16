@@ -98,7 +98,8 @@ def predict_stock(request):
         else :
             stock8 = np.append(stock1,int(stock[3][i]))
 
-    stocks = np.array([stock0,stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8])        
+    stocks = np.array([stock0,stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8])
+    stocks = stocks.tolist()        
     return render(request,'core/predict_sotck.html',{
             'stocks':stocks
     })
