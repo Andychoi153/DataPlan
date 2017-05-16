@@ -56,7 +56,7 @@ def lotter_extractor(request):
 
 def predict_stock(request):
     import numpy as np
-    stocks = np.loadtxt('/upload/simple-file-upload/uploads/core/foo.txt')
+    stock = np.loadtxt('/upload/simple-file-upload/uploads/core/foo.txt')
 
     stock0 = np.array([])
     stock1 = np.array([])
