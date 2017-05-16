@@ -99,7 +99,7 @@ def predict_stock(request):
 
     stocks = np.array([stock0,stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8])        
     return render(request,'core/predict_sotck.html',{
-        'stocks':stocks
+            'stocks':stocks
         })
 
 def model_desc(request):
