@@ -78,25 +78,25 @@ def predict_stock(request):
             stock1 = np.append(stock1,int(stock[3][i]))
         
         elif stock[2][i]==5:
-            stock2 = np.append(stock1,int(stock[3][i]))
+            stock2 = np.append(stock2,int(stock[3][i]))
             
         elif stock[2][i]==4:
-            stock3 = np.append(stock1,int(stock[3][i]))
+            stock3 = np.append(stock3,int(stock[3][i]))
             
         elif stock[2][i]==3:
-            stock4 = np.append(stock1,int(stock[3][i]))
+            stock4 = np.append(stock4,int(stock[3][i]))
             
         elif stock[2][i]==2:
-            stock5 = np.append(stock1,int(stock[3][i]))
+            stock5 = np.append(stock5,int(stock[3][i]))
             
         elif stock[2][i]==1:
-            stock6 = np.append(stock1,int(stock[3][i]))
+            stock6 = np.append(stock6,int(stock[3][i]))
             
         elif stock[2][i]==0:
-            stock7 = np.append(stock1,int(stock[3][i]))
+            stock7 = np.append(stock7,int(stock[3][i]))
             
         else :
-            stock8 = np.append(stock1,int(stock[3][i]))
+            stock8 = np.append(stock8,int(stock[3][i]))
 
     stocks = np.array([stock0,stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8])
     stocks = stocks.tolist()        
